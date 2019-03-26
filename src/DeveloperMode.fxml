@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="585.0" style="-fx-background-color: #555;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxfinder.DeveloperModeController">
+   <children>
+      <Label layoutX="196.0" layoutY="14.0" text="WARNING" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="22.0" layoutY="81.0" prefHeight="194.0" prefWidth="544.0" text="Developer Mode should only be used by those who know how to properly execute the find command in a linux based terminal. &#10;&#10;Please use this mode with caution &#10;&#10;To learn how to use the &quot;find&quot; command properly, refer to the man page that is located in the settings tab." wrapText="true">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="retn" layoutX="89.0" layoutY="293.0" mnemonicParsing="false" onAction="#backToNormal" prefHeight="48.0" prefWidth="145.0" style="-fx-background-color: #2a9f22; -fx-text-fill: white;" text="Return">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="cont" layoutX="369.0" layoutY="293.0" mnemonicParsing="false" onAction="#openDeveloper" prefHeight="48.0" prefWidth="145.0" style="-fx-background-color: #9f2a22; -fx-text-fill: white;" text="Continue">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
